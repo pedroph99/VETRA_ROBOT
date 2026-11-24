@@ -1,0 +1,439 @@
+{
+  "dataset": "spMohanty/PlantVillage-Dataset",
+  "commit": "7f7ecc7e1eaca78107e3affe7cb5abd9427e139a",
+  "purpose": "Simulação; não é teste independente do treinamento.",
+  "images": [
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Bacterial_spot",
+      "file": "Tomato___Bacterial_spot/00416648-be6e-4bd4-bc8d-82f43f8a7240___GCREC_Bact.Sp 3110.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Bacterial_spot/00416648-be6e-4bd4-bc8d-82f43f8a7240___GCREC_Bact.Sp%203110.JPG",
+      "git_blob": "1ad34563cafab04523c198139d415800d7d76b2e",
+      "sha256": "3320c46706d434c028aa93fde868140c48604a328844f2b1c553d020bdc9db06"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Bacterial_spot",
+      "file": "Tomato___Bacterial_spot/0045ba29-ed1b-43b4-afde-719cc7adefdb___GCREC_Bact.Sp 6254.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Bacterial_spot/0045ba29-ed1b-43b4-afde-719cc7adefdb___GCREC_Bact.Sp%206254.JPG",
+      "git_blob": "7b35b1966bdf629927df8be73c62d3354895a5d1",
+      "sha256": "88555cac183d27f4efd1972bc672e1178661f2db68753efbaacd73eb3c43cb45"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Bacterial_spot",
+      "file": "Tomato___Bacterial_spot/00639d29-2d1a-4fcf-9bd3-a2b3109c74c4___UF.GRC_BS_Lab Leaf 1054.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Bacterial_spot/00639d29-2d1a-4fcf-9bd3-a2b3109c74c4___UF.GRC_BS_Lab%20Leaf%201054.JPG",
+      "git_blob": "2dae38a3bdcc3db697be542da0e60012b1410de5",
+      "sha256": "1c1dde85185153d24bc79fb343681aed009737513c1c5c5864f4952026ef1b93"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Early_blight",
+      "file": "Tomato___Early_blight/0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B 8389.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Early_blight/0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B%208389.JPG",
+      "git_blob": "26777f17de50332a6bdb9f068e4217167a698e8a",
+      "sha256": "29b79036b67724f6a76895d17ef1b863ad7a7134e03141b1feb601a591336123"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Early_blight",
+      "file": "Tomato___Early_blight/0034a551-9512-44e5-ba6c-827f85ecc688___RS_Erly.B 9432.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Early_blight/0034a551-9512-44e5-ba6c-827f85ecc688___RS_Erly.B%209432.JPG",
+      "git_blob": "5e654d49db2d540cb660b035fc86931846dfd271",
+      "sha256": "ec1e81f52511918a2f14ac0ef020a850b745230de9ef74485d505133af963525"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Early_blight",
+      "file": "Tomato___Early_blight/004cbe60-8ff9-4965-92df-e86694d5e9ba___RS_Erly.B 8253.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Early_blight/004cbe60-8ff9-4965-92df-e86694d5e9ba___RS_Erly.B%208253.JPG",
+      "git_blob": "3f238946a0b49842ca63cdae1a31370d2a70c590",
+      "sha256": "896801c0cfcd0335be005844f254ff7f8c3a9c432398444f4539681f6e90603e"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Late_blight",
+      "file": "Tomato___Late_blight/0003faa8-4b27-4c65-bf42-6d9e352ca1a5___RS_Late.B 4946.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Late_blight/0003faa8-4b27-4c65-bf42-6d9e352ca1a5___RS_Late.B%204946.JPG",
+      "git_blob": "e78aea0da1519a5f4a08a07afff6bb27d427d2a2",
+      "sha256": "355d9ed5d0212dfc72eeda78118c55966febe086b60ff46fd7702766e92827d3"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Late_blight",
+      "file": "Tomato___Late_blight/00355ec2-f12c-4015-b8f9-94354f69ce22___RS_Late.B 5311.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Late_blight/00355ec2-f12c-4015-b8f9-94354f69ce22___RS_Late.B%205311.JPG",
+      "git_blob": "68d5c1ec993514144177fdd11c267c942126e6da",
+      "sha256": "5c99f2f40da356465b10881acb21b64f0dc75daccf58b9dae567953c25fcfc9c"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Late_blight",
+      "file": "Tomato___Late_blight/005a2c1f-4e15-49e4-9e5c-61dc3ecf9708___RS_Late.B 5096.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Late_blight/005a2c1f-4e15-49e4-9e5c-61dc3ecf9708___RS_Late.B%205096.JPG",
+      "git_blob": "66ba48ae4dc383fe91881250c1fa5815145f32ea",
+      "sha256": "23b964de025c5db45bd692dd461e6b40377adaa8f13c7835ec83f3a8f565cf5d"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Leaf_Mold",
+      "file": "Tomato___Leaf_Mold/00694db7-3327-45e0-b4da-a8bb7ab6a4b7___Crnl_L.Mold 6923.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Leaf_Mold/00694db7-3327-45e0-b4da-a8bb7ab6a4b7___Crnl_L.Mold%206923.JPG",
+      "git_blob": "93fc4ddc0f9bf6be93c22a3142fa621bd33cc6db",
+      "sha256": "da134693ae63c823eb13fa0c793f74e24b32439242c623f74cfd730ace00c593"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Leaf_Mold",
+      "file": "Tomato___Leaf_Mold/0160c3b5-d89e-40e5-a313-49ae1524040a___Crnl_L.Mold 6823.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Leaf_Mold/0160c3b5-d89e-40e5-a313-49ae1524040a___Crnl_L.Mold%206823.JPG",
+      "git_blob": "e7adf075c73d459627512bebe8904967766a7c3c",
+      "sha256": "efda5300452c4281199a66cb9968e5114ee04c1c07f69cff81d95ef16bf7919d"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Leaf_Mold",
+      "file": "Tomato___Leaf_Mold/0185befe-f0b5-4848-9677-f33c2237f4e9___Crnl_L.Mold 8729.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Leaf_Mold/0185befe-f0b5-4848-9677-f33c2237f4e9___Crnl_L.Mold%208729.JPG",
+      "git_blob": "e00638ef6ac6758270bd31f9e8b8d81fe7ba0815",
+      "sha256": "d8e929982f75d3bb6b8e0789073634619e3596084a05980597005369552f78dc"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Septoria_leaf_spot",
+      "file": "Tomato___Septoria_leaf_spot/002533c1-722b-44e5-9d2e-91f7747b2543___Keller.St_CG 1831.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Septoria_leaf_spot/002533c1-722b-44e5-9d2e-91f7747b2543___Keller.St_CG%201831.JPG",
+      "git_blob": "823074f04cc193656864bc9d59f75474cf882204",
+      "sha256": "8e7a02dc0443207b328b1fb797515de3970eef70a9df7e398bfdc9dcc2e69f71"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Septoria_leaf_spot",
+      "file": "Tomato___Septoria_leaf_spot/0025c401-7785-49c5-8bef-780a8a0d3652___Matt.S_CG 2694.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Septoria_leaf_spot/0025c401-7785-49c5-8bef-780a8a0d3652___Matt.S_CG%202694.JPG",
+      "git_blob": "ea651e1939b49654ec324b6bfcdc01e658e00bd5",
+      "sha256": "8a2eb9d332fe22be3ab26129fdd9d87b62df6bd722f7469dcf79f911bc125eb4"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Septoria_leaf_spot",
+      "file": "Tomato___Septoria_leaf_spot/006c018a-bb21-4a24-b1ff-d8b2864a7354___Matt.S_CG 6192.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Septoria_leaf_spot/006c018a-bb21-4a24-b1ff-d8b2864a7354___Matt.S_CG%206192.JPG",
+      "git_blob": "9991fe49828f0c00814b04adc10fadd3ddaf1cc0",
+      "sha256": "b9a0e88742ce84e648bfffc65df27a9bcfb65a43f9684d7296daee3ae40c8494"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Target_Spot",
+      "file": "Tomato___Target_Spot/002213fb-b620-4593-b9ac-6a6cc119b100___Com.G_TgS_FL 8360.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Target_Spot/002213fb-b620-4593-b9ac-6a6cc119b100___Com.G_TgS_FL%208360.JPG",
+      "git_blob": "7a83b82304bb1091f9c3972b7b5b5c3e818dcc91",
+      "sha256": "58572ee41dd4623a564ac34234be9866e442243c94ce4e72c6b9ac0ab565ac73"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Target_Spot",
+      "file": "Tomato___Target_Spot/003a5321-0430-42dd-a38d-30ac4563f4ba___Com.G_TgS_FL 8121.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Target_Spot/003a5321-0430-42dd-a38d-30ac4563f4ba___Com.G_TgS_FL%208121.JPG",
+      "git_blob": "58df78808327f164f9729ea821f1126824cc043e",
+      "sha256": "7fc7981980049a02fd99e29d709b137b767bc2bdedcc5cb3c5436598ab643520"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Target_Spot",
+      "file": "Tomato___Target_Spot/0044d10f-7062-4655-8abd-9fffc5b2f152___Com.G_TgS_FL 7908.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Target_Spot/0044d10f-7062-4655-8abd-9fffc5b2f152___Com.G_TgS_FL%207908.JPG",
+      "git_blob": "a7b8c9ad2d7141f259edf101f383bc71bb937f53",
+      "sha256": "d4d54115cf5668a009e19f63f8e3e68565e5f0e6937b86379f357aac01050d91"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Tomato_mosaic_virus",
+      "file": "Tomato___Tomato_mosaic_virus/000ec6ea-9063-4c33-8abe-d58ca8a88878___PSU_CG 2169.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Tomato_mosaic_virus/000ec6ea-9063-4c33-8abe-d58ca8a88878___PSU_CG%202169.JPG",
+      "git_blob": "a93ad83b1aabacf46da083c38769c5007722c2a7",
+      "sha256": "478ead03f1f962f60ae3455b90affd170c8b6a5cca95a60d1cf5e32b68f8bd0c"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Tomato_mosaic_virus",
+      "file": "Tomato___Tomato_mosaic_virus/006e354b-c054-4b72-a83c-e3feb038942e___PSU_CG 2330.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Tomato_mosaic_virus/006e354b-c054-4b72-a83c-e3feb038942e___PSU_CG%202330.JPG",
+      "git_blob": "2a7328e94b2d91228c3ae968452652d73433814a",
+      "sha256": "9f0d28b8bda2172041870a05ca58e9479b21b7a406517301ab53075dcb1cb7df"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Tomato_mosaic_virus",
+      "file": "Tomato___Tomato_mosaic_virus/00c07a77-15e6-4815-92d4-8d1e1afb7f3c___PSU_CG 2052.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Tomato_mosaic_virus/00c07a77-15e6-4815-92d4-8d1e1afb7f3c___PSU_CG%202052.JPG",
+      "git_blob": "7b292f8ca869fa7595269197f1ddd976fe0de176",
+      "sha256": "06c2a06a68f0e0990de0d91e0fcb7ceeafed2c8c80145a7b7e595f2a298545f2"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "file": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/00139ae8-d881-4edb-925f-46584b0bd68c___YLCV_NREC 2944.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Tomato_Yellow_Leaf_Curl_Virus/00139ae8-d881-4edb-925f-46584b0bd68c___YLCV_NREC%202944.JPG",
+      "git_blob": "fcbd93072c88ab4260f93c31ee7352f3883f8f29",
+      "sha256": "b5b5e2313185ee642fc6931aab24d4e2c2b6915d467eca6e16508e1e458cc7b0"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "file": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/0036c89d-7743-4895-9fcf-b8d2c1fc8455___YLCV_NREC 0313.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Tomato_Yellow_Leaf_Curl_Virus/0036c89d-7743-4895-9fcf-b8d2c1fc8455___YLCV_NREC%200313.JPG",
+      "git_blob": "2a4d4e54aef6b1926bdc38ab76a80e7208928476",
+      "sha256": "04af2835164a69aa7f2ea5acce42e1ab2c6b511f2f88cbb10e05f3f4e6e19177"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "file": "Tomato___Tomato_Yellow_Leaf_Curl_Virus/003bce78-28c9-4612-b148-f621e9a23bd4___YLCV_GCREC 5154.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Tomato_Yellow_Leaf_Curl_Virus/003bce78-28c9-4612-b148-f621e9a23bd4___YLCV_GCREC%205154.JPG",
+      "git_blob": "53513c0bf02c8034d05cfb382879715daf88f88b",
+      "sha256": "5b0578e13408ec0fc12081e3e268c58022bcf965263d3da917d2848819051894"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "file": "Tomato___Spider_mites Two-spotted_spider_mite/002835d1-c18e-4471-aa6e-8d8c29585e9b___Com.G_SpM_FL 8584.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Spider_mites%20Two-spotted_spider_mite/002835d1-c18e-4471-aa6e-8d8c29585e9b___Com.G_SpM_FL%208584.JPG",
+      "git_blob": "a2994f51fc5439f21fb7569c6b8361735e9fd5c8",
+      "sha256": "e7a0bfcde5d0dbec10505a121587fdac55ccf4cafe4262e85545f2673f8dd1a6"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "file": "Tomato___Spider_mites Two-spotted_spider_mite/003b7929-a364-4e74-be1c-37c4c0a6ec63___Com.G_SpM_FL 1414.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Spider_mites%20Two-spotted_spider_mite/003b7929-a364-4e74-be1c-37c4c0a6ec63___Com.G_SpM_FL%201414.JPG",
+      "git_blob": "2ee7951a1d9e7346a7bddce0e8e779448a6e4e9a",
+      "sha256": "ba4c4472d7a8aad979d335aa8fa00ebd20d064b886424ecbd3aea9cb44d688ec"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "file": "Tomato___Spider_mites Two-spotted_spider_mite/00bc7858-1dca-4bfb-a828-225f03bd72a5___Com.G_SpM_FL 9455.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___Spider_mites%20Two-spotted_spider_mite/00bc7858-1dca-4bfb-a828-225f03bd72a5___Com.G_SpM_FL%209455.JPG",
+      "git_blob": "16d5c48f2e350ce90c080623a6a6ec89e8c300c3",
+      "sha256": "19aa2d94cc46f761e1d25a5ff827f7a2e38e58c2589d6513496b6766c6fcdc2e"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___healthy",
+      "file": "Tomato___healthy/000146ff-92a4-4db6-90ad-8fce2ae4fddd___GH_HL Leaf 259.1.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___healthy/000146ff-92a4-4db6-90ad-8fce2ae4fddd___GH_HL%20Leaf%20259.1.JPG",
+      "git_blob": "7f5035f24eaecb2a6ac3bff21ba5a391b0452d8b",
+      "sha256": "a294299b0518a50ebc275c0ec4519b022cab8b34735039f6c2a089a911f6964e"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___healthy",
+      "file": "Tomato___healthy/000bf685-b305-408b-91f4-37030f8e62db___GH_HL Leaf 308.1.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___healthy/000bf685-b305-408b-91f4-37030f8e62db___GH_HL%20Leaf%20308.1.JPG",
+      "git_blob": "b66990434b25e4338cfd78d80fc55675a0d75b25",
+      "sha256": "a0d4ca4c979a0ca63ebb20a66bbd1cd46a43138d849b53bce1921694ab91938b"
+    },
+    {
+      "crop": "Tomate",
+      "label": "Tomato___healthy",
+      "file": "Tomato___healthy/0031da2a-8edd-468f-a8b1-106657717a32___RS_HL 0105.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Tomato___healthy/0031da2a-8edd-468f-a8b1-106657717a32___RS_HL%200105.JPG",
+      "git_blob": "d3d292d2751083bf4d775ffd8fa068291fa70dce",
+      "sha256": "fc4556527d5d059c9259d993b9b4774a2cee841b6cfab0444da17a6c0586d491"
+    },
+    {
+      "crop": "Pimentão",
+      "label": "Pepper,_bell___Bacterial_spot",
+      "file": "Pepper,_bell___Bacterial_spot/0022d6b7-d47c-4ee2-ae9a-392a53f48647___JR_B.Spot 8964.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Pepper%2C_bell___Bacterial_spot/0022d6b7-d47c-4ee2-ae9a-392a53f48647___JR_B.Spot%208964.JPG",
+      "git_blob": "ad73508e26a3c2886513a42743ec96ad00e9f332",
+      "sha256": "a3ff41a119c785e4e37683880c47456ae2a4c27f37538072a08f2103dde2108d"
+    },
+    {
+      "crop": "Pimentão",
+      "label": "Pepper,_bell___Bacterial_spot",
+      "file": "Pepper,_bell___Bacterial_spot/006adb74-934f-448f-a14f-62181742127b___JR_B.Spot 3395.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Pepper%2C_bell___Bacterial_spot/006adb74-934f-448f-a14f-62181742127b___JR_B.Spot%203395.JPG",
+      "git_blob": "4b48e2f66d895a72741172c354356c4730d8ee4d",
+      "sha256": "84a7cceea14c879fcfea25b52b90bfc0e8a13f1fbceb0fb3ccd21045cb54a102"
+    },
+    {
+      "crop": "Pimentão",
+      "label": "Pepper,_bell___Bacterial_spot",
+      "file": "Pepper,_bell___Bacterial_spot/00f2e69a-1e56-412d-8a79-fdce794a17e4___JR_B.Spot 3132.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Pepper%2C_bell___Bacterial_spot/00f2e69a-1e56-412d-8a79-fdce794a17e4___JR_B.Spot%203132.JPG",
+      "git_blob": "bb2099f71899d9084ed04e2a7768837c7245f4c8",
+      "sha256": "d1b01e4214316f9fb31bb84258cfd2487f3d7c0558e657196f659d9ba6742b5c"
+    },
+    {
+      "crop": "Pimentão",
+      "label": "Pepper,_bell___healthy",
+      "file": "Pepper,_bell___healthy/00100ffa-095e-4881-aebf-61fe5af7226e___JR_HL 7886.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Pepper%2C_bell___healthy/00100ffa-095e-4881-aebf-61fe5af7226e___JR_HL%207886.JPG",
+      "git_blob": "c5c698ce898a5d880a3edf77ae31969da18c1ae2",
+      "sha256": "7338e5c3be02ddfb4fc37336c4d111ecb23dc33860bee59e77defaf563b621d7"
+    },
+    {
+      "crop": "Pimentão",
+      "label": "Pepper,_bell___healthy",
+      "file": "Pepper,_bell___healthy/00208a93-7687-4e8c-b79e-3138687e0f38___JR_HL 7955.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Pepper%2C_bell___healthy/00208a93-7687-4e8c-b79e-3138687e0f38___JR_HL%207955.JPG",
+      "git_blob": "af9091118dab363420b21088aae660b37276f4b5",
+      "sha256": "8bd46db0bd8af57272d0d5721df025cbc4856c3b5d11164bc2eb093909183340"
+    },
+    {
+      "crop": "Pimentão",
+      "label": "Pepper,_bell___healthy",
+      "file": "Pepper,_bell___healthy/002f87b7-e1a5-49e5-a422-bb423630ded5___JR_HL 8068.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Pepper%2C_bell___healthy/002f87b7-e1a5-49e5-a422-bb423630ded5___JR_HL%208068.JPG",
+      "git_blob": "13165a7a684acb92807278449d5e1545367f78c1",
+      "sha256": "cbbafd4449715c98e67e2d081dbe24e70ada529fa3d699314dc7dd11486fe024"
+    },
+    {
+      "crop": "Morango",
+      "label": "Strawberry___Leaf_scorch",
+      "file": "Strawberry___Leaf_scorch/0024203d-6e4c-490f-b9a8-e5926df0b76e___RS_L.Scorch 0795.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Strawberry___Leaf_scorch/0024203d-6e4c-490f-b9a8-e5926df0b76e___RS_L.Scorch%200795.JPG",
+      "git_blob": "0a5943852b0ba572ce54796086560709df43db00",
+      "sha256": "ced7b1a3b8dea109af205706c92ad984e461780c4400f8eb3856f0a646435bd7"
+    },
+    {
+      "crop": "Morango",
+      "label": "Strawberry___Leaf_scorch",
+      "file": "Strawberry___Leaf_scorch/0112c6b2-72cd-402b-89cd-ca052983403e___RS_L.Scorch 1161.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Strawberry___Leaf_scorch/0112c6b2-72cd-402b-89cd-ca052983403e___RS_L.Scorch%201161.JPG",
+      "git_blob": "9b108ef44dc1af9d23b4e31529455d1c5481677d",
+      "sha256": "e24ec4d33dd3e8ffe561575524c37c21894540726c124b051f7105492e5f54d1"
+    },
+    {
+      "crop": "Morango",
+      "label": "Strawberry___Leaf_scorch",
+      "file": "Strawberry___Leaf_scorch/0138e78b-9802-43b5-b40e-84c38160418c___RS_L.Scorch 1289.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Strawberry___Leaf_scorch/0138e78b-9802-43b5-b40e-84c38160418c___RS_L.Scorch%201289.JPG",
+      "git_blob": "cc184cf1c5c283516fc9edb05ea25e84cc9710a8",
+      "sha256": "ce1769b2463917d970b44838c2579f022450fda30ae95270879435920dcd654a"
+    },
+    {
+      "crop": "Morango",
+      "label": "Strawberry___healthy",
+      "file": "Strawberry___healthy/00166615-5e7b-4318-8957-5e50df335ee8___RS_HL 1785.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Strawberry___healthy/00166615-5e7b-4318-8957-5e50df335ee8___RS_HL%201785.JPG",
+      "git_blob": "ed2872ad631b75ab962d23e22f06446fdf3196be",
+      "sha256": "8819f3ed96555346077514d7c24b77c7e28f444312e4b774d38aaea0789cc674"
+    },
+    {
+      "crop": "Morango",
+      "label": "Strawberry___healthy",
+      "file": "Strawberry___healthy/00532378-bfb2-4d3b-8b19-903ecc085624___RS_HL 2021.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Strawberry___healthy/00532378-bfb2-4d3b-8b19-903ecc085624___RS_HL%202021.JPG",
+      "git_blob": "31f8d68d060968235707538e48cd8f95d0d12fde",
+      "sha256": "127b7d76cb6fe1ecb780f1dc96fee23c7a41b0c25cb90e6f6e797b69d6937d91"
+    },
+    {
+      "crop": "Morango",
+      "label": "Strawberry___healthy",
+      "file": "Strawberry___healthy/00e9a277-ca5e-4350-95ce-8b2918b69fb9___RS_HL 4667.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Strawberry___healthy/00e9a277-ca5e-4350-95ce-8b2918b69fb9___RS_HL%204667.JPG",
+      "git_blob": "1c2ca867e833e0c93272bbba264e3efa053bfe59",
+      "sha256": "9d97c8c1563c7e83cfc54cba680a85ffe11e120ba4a016aeb7c997621d9e9ac1"
+    },
+    {
+      "crop": "Batata",
+      "label": "Potato___Early_blight",
+      "file": "Potato___Early_blight/001187a0-57ab-4329-baff-e7246a9edeb0___RS_Early.B 8178.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Potato___Early_blight/001187a0-57ab-4329-baff-e7246a9edeb0___RS_Early.B%208178.JPG",
+      "git_blob": "f856a3e9f4b61edfa5a353961ba57e2c995f139f",
+      "sha256": "100079e00ccf046c761599235a1a73db03980fa4847b2a2fe8ea4092bca6bf5c"
+    },
+    {
+      "crop": "Batata",
+      "label": "Potato___Early_blight",
+      "file": "Potato___Early_blight/002a55fb-7a3d-4a3a-aca8-ce2d5ebc6925___RS_Early.B 8170.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Potato___Early_blight/002a55fb-7a3d-4a3a-aca8-ce2d5ebc6925___RS_Early.B%208170.JPG",
+      "git_blob": "50db8c0ce5bde822aefcd749d059d0b41a57a693",
+      "sha256": "f82d5fed95db82eb2863eb2b236c3d4f0285a20966bd2048fdf12f97d3f4aa5a"
+    },
+    {
+      "crop": "Batata",
+      "label": "Potato___Early_blight",
+      "file": "Potato___Early_blight/009c8c31-f22d-4ffd-8f16-189c6f06c577___RS_Early.B 7885.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Potato___Early_blight/009c8c31-f22d-4ffd-8f16-189c6f06c577___RS_Early.B%207885.JPG",
+      "git_blob": "43dfee97e241e21793a0544273bb06e03485138c",
+      "sha256": "15ac0f0ace743361f4645cbb5bc5ff7fb44f72e2dcddbd7b2a5c20268512ddc5"
+    },
+    {
+      "crop": "Batata",
+      "label": "Potato___Late_blight",
+      "file": "Potato___Late_blight/0051e5e8-d1c4-4a84-bf3a-a426cdad6285___RS_LB 4640.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Potato___Late_blight/0051e5e8-d1c4-4a84-bf3a-a426cdad6285___RS_LB%204640.JPG",
+      "git_blob": "e951184960d9767736e5a89e516979af9beb4821",
+      "sha256": "96baa8bba4a2397887e94753a8908e35108a88a1c4715c7eab259a3bfae00b27"
+    },
+    {
+      "crop": "Batata",
+      "label": "Potato___Late_blight",
+      "file": "Potato___Late_blight/00695906-210d-4a9d-822e-986a17384115___RS_LB 4026.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Potato___Late_blight/00695906-210d-4a9d-822e-986a17384115___RS_LB%204026.JPG",
+      "git_blob": "ca125d3d0b497c32848307f799900ed87681c9dd",
+      "sha256": "19c795b1ef3b8b915d7a166fb1075c79017f24989361ad6620606d07c6b94b13"
+    },
+    {
+      "crop": "Batata",
+      "label": "Potato___Late_blight",
+      "file": "Potato___Late_blight/006cc01a-1888-4326-9b62-a65cb55a6377___RS_LB 5207.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Potato___Late_blight/006cc01a-1888-4326-9b62-a65cb55a6377___RS_LB%205207.JPG",
+      "git_blob": "699a42d68f6c6a00c50e74f09ff611b247dc439b",
+      "sha256": "e2736064b143d773743c06c957b00ca5c2fc6c8dc81fc750e812732eac6bd6a8"
+    },
+    {
+      "crop": "Batata",
+      "label": "Potato___healthy",
+      "file": "Potato___healthy/00fc2ee5-729f-4757-8aeb-65c3355874f2___RS_HL 1864.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Potato___healthy/00fc2ee5-729f-4757-8aeb-65c3355874f2___RS_HL%201864.JPG",
+      "git_blob": "66b400ede4f6d1e4a1a77f0d462b98b51da732c0",
+      "sha256": "1c057430715c288100b64ac6136b69f23f8708f92e7e4f0410ac16b110325946"
+    },
+    {
+      "crop": "Batata",
+      "label": "Potato___healthy",
+      "file": "Potato___healthy/03da9931-e514-4cc7-b04a-8f474a133ce5___RS_HL 1830.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Potato___healthy/03da9931-e514-4cc7-b04a-8f474a133ce5___RS_HL%201830.JPG",
+      "git_blob": "4ffbdd350e652330ad8e8bb595514dd8b4551122",
+      "sha256": "ca02edeb23fcea64bae292a7b20f9a4b26484df6a287b3fb5d6b4fe53b131f33"
+    },
+    {
+      "crop": "Batata",
+      "label": "Potato___healthy",
+      "file": "Potato___healthy/04481ca2-f94c-457e-b785-1ac05800b7ec___RS_HL 1930.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Potato___healthy/04481ca2-f94c-457e-b785-1ac05800b7ec___RS_HL%201930.JPG",
+      "git_blob": "216792e5b363c32617f40ce9a3a9411c0ce4ef58",
+      "sha256": "aed52452d81d81597b1bac54981bcae6952906110f7aa47be945a6a28f4a7e60"
+    },
+    {
+      "crop": "Laranja",
+      "label": "Orange___Haunglongbing_(Citrus_greening)",
+      "file": "Orange___Haunglongbing_(Citrus_greening)/00045d08-898c-40df-ada6-e7579637a1f9___UF.Citrus_HLB_Lab 1690.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Orange___Haunglongbing_(Citrus_greening)/00045d08-898c-40df-ada6-e7579637a1f9___UF.Citrus_HLB_Lab%201690.JPG",
+      "git_blob": "630608b93928f974dd9486294e79e26fe8cde36d",
+      "sha256": "9ad662d062f6ac5b0f58e6ba58a11dd0a0ea44100e093447af4b89f29fdb4fe4"
+    },
+    {
+      "crop": "Laranja",
+      "label": "Orange___Haunglongbing_(Citrus_greening)",
+      "file": "Orange___Haunglongbing_(Citrus_greening)/000945ae-3cf5-48c2-86a2-a3f1e777f2c7___CREC_HLB 7640.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Orange___Haunglongbing_(Citrus_greening)/000945ae-3cf5-48c2-86a2-a3f1e777f2c7___CREC_HLB%207640.JPG",
+      "git_blob": "74fdd43f08d2f636af9c2822b195a1eb02f5b61f",
+      "sha256": "c005140d9cd523d1ef3508d7a350b0cabf7d9955ea1fa7dfbe26b992fe5dd34a"
+    },
+    {
+      "crop": "Laranja",
+      "label": "Orange___Haunglongbing_(Citrus_greening)",
+      "file": "Orange___Haunglongbing_(Citrus_greening)/0022b959-3cf3-4e3a-9ed2-94623183c7fb___CREC_HLB 5510.JPG",
+      "url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color/Orange___Haunglongbing_(Citrus_greening)/0022b959-3cf3-4e3a-9ed2-94623183c7fb___CREC_HLB%205510.JPG",
+      "git_blob": "a8456fbf1f96c5bcf6bb095f5d3bf69c5d86217a",
+      "sha256": "7ea387322019b7f7c044b04c4581e9ac8038632bd2cd6594505e96b581e7b84f"
+    }
+  ]
+}

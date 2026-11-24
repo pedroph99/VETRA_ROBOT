@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "revisao": "2026-09-27",
+  "finalidade": "Triagem educacional: relacionar a classe prevista a hipóteses, nunca confirmar pragas ou prescrever tratamento.",
+  "limites": [
+    "O classificador prevê uma classe da imagem inteira; não localiza insetos nem mede sintomas individualmente.",
+    "Os sintomas listados são típicos da referência, não observações comprovadas nesta foto.",
+    "Softmax não é probabilidade calibrada da doença nem probabilidade de presença da praga.",
+    "Fotos PlantVillage têm domínio controlado; desempenho em campo e independência em relação ao treino não foram demonstrados.",
+    "Classe saudável não exclui pragas, doenças não cobertas ou sintomas fora da imagem."
+  ],
+  "culturas": {"Tomate": "Tomato", "Pimentão": "Pepper,_bell", "Morango": "Strawberry", "Batata": "Potato", "Laranja": "Orange"},
+  "fontes": {
+    "plantvillage": "https://github.com/spMohanty/PlantVillage-Dataset/tree/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/raw/color",
+    "tylcv": "https://ipm.ucanr.edu/agriculture/tomato/tomato-yellow-leaf-curl/",
+    "acaros": "https://ipm.ucanr.edu/home-and-landscape/spider-mites/",
+    "pulgoes": "https://apps.extension.umn.edu/garden/diagnose/plant/vegetable/tomato/leavescurled.html",
+    "tripes": "https://ipm.ucanr.edu/agriculture/tomato/thrips/",
+    "psilideo": "https://ipm.ucanr.edu/agriculture/citrus/asian-citrus-psyllid/"
+  },
+  "classes": {
+    "Tomato___Bacterial_spot": {"nome": "Mancha bacteriana do tomate", "categoria": "doenca"},
+    "Tomato___Early_blight": {"nome": "Pinta-preta do tomate", "categoria": "doenca"},
+    "Tomato___Late_blight": {"nome": "Requeima do tomate", "categoria": "doenca"},
+    "Tomato___Leaf_Mold": {"nome": "Mofo foliar do tomate", "categoria": "doenca"},
+    "Tomato___Septoria_leaf_spot": {"nome": "Septoriose do tomate", "categoria": "doenca"},
+    "Tomato___Target_Spot": {"nome": "Mancha-alvo do tomate", "categoria": "doenca"},
+    "Tomato___Tomato_mosaic_virus": {"nome": "Mosaico do tomate", "categoria": "doenca"},
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {"nome": "Virose do enrolamento amarelo do tomate", "categoria": "doenca", "sintomas_tipicos": ["Folhas novas pequenas e enrugadas", "Enrolamento para cima e amarelecimento", "Crescimento reduzido"], "fontes": ["tylcv"]},
+    "Tomato___Spider_mites Two-spotted_spider_mite": {"nome": "Dano compatível com ácaro-rajado", "categoria": "dano_praga", "sintomas_tipicos": ["Pontuações claras finas", "Bronzeamento ou amarelecimento", "Teias e ácaros podem ocorrer no verso"], "fontes": ["acaros", "plantvillage"]},
+    "Tomato___healthy": {"nome": "Folha de tomate aparentemente saudável", "categoria": "saudavel"},
+    "Pepper,_bell___Bacterial_spot": {"nome": "Mancha bacteriana do pimentão", "categoria": "doenca"},
+    "Pepper,_bell___healthy": {"nome": "Folha de pimentão aparentemente saudável", "categoria": "saudavel"},
+    "Strawberry___Leaf_scorch": {"nome": "Queima foliar do morangueiro", "categoria": "doenca"},
+    "Strawberry___healthy": {"nome": "Folha de morangueiro aparentemente saudável", "categoria": "saudavel"},
+    "Potato___Early_blight": {"nome": "Pinta-preta da batata", "categoria": "doenca"},
+    "Potato___Late_blight": {"nome": "Requeima da batata", "categoria": "doenca"},
+    "Potato___healthy": {"nome": "Folha de batata aparentemente saudável", "categoria": "saudavel"},
+    "Orange___Haunglongbing_(Citrus_greening)": {"nome": "Greening dos citros (HLB)", "categoria": "doenca", "sintomas_tipicos": ["Amarelecimento irregular das folhas", "Redução de vigor"], "fontes": ["psilideo", "plantvillage"]}
+  },
+  "pragas": [
+    {"id": "mosca_branca", "nome": "Mosca-branca", "grupo": "inseto", "relacao": "vetor", "culturas": ["Tomate"], "classes_relacionadas": ["Tomato___Tomato_Yellow_Leaf_Curl_Virus"], "sintomas_tipicos": ["Folhas pequenas, enroladas e amareladas na virose transmitida"], "interpretacao": "Espécies de Bemisia transmitem TYLCV. A previsão da virose não demonstra mosca-branca presente; observar o inseto também não confirma infecção.", "verificar": ["Inspecionar o verso das folhas e brotações", "Solicitar avaliação fitossanitária e confirmação específica da virose"], "fontes": ["tylcv"]},
+    {"id": "acaro_rajado", "nome": "Ácaro-rajado", "grupo": "acaro", "relacao": "dano_direto", "culturas": ["Tomate"], "classes_relacionadas": ["Tomato___Spider_mites Two-spotted_spider_mite"], "sintomas_tipicos": ["Pontuações claras finas", "Bronzeamento", "Possíveis teias no verso"], "interpretacao": "Existe classe explícita de dano por ácaro-rajado. O modelo reconhece aparência compatível, não identifica nem conta os ácaros individualmente.", "verificar": ["Examinar o verso das folhas com lupa", "Procurar ácaros e teias para confirmar a hipótese"], "fontes": ["acaros", "plantvillage"]},
+    {"id": "pulgoes", "nome": "Pulgões", "grupo": "inseto", "relacao": "semelhanca_visual", "culturas": ["Tomate"], "classes_relacionadas": ["Tomato___Tomato_Yellow_Leaf_Curl_Virus"], "classe_propria": false, "sintomas_tipicos": ["Enrolamento e murcha em infestações intensas", "Crescimento prejudicado"], "interpretacao": "Hipótese diferencial por sintomas semelhantes, não saída do modelo. Não atribuir a transmissão de TYLCV aos pulgões. Enrolamento também pode ter causas abióticas.", "verificar": ["Procurar colônias nas folhas e brotações", "Avaliar estresse hídrico e outras causas de enrolamento"], "fontes": ["pulgoes", "tylcv"]},
+    {"id": "tripes", "nome": "Tripes", "grupo": "inseto", "relacao": "semelhanca_visual", "culturas": ["Tomate"], "classes_relacionadas": [], "classe_propria": false, "sintomas_tipicos": ["Áreas esbranquiçadas ou prateadas em folhas novas", "Minúsculos pontos pretos de fezes"], "interpretacao": "Não inferir tripes de qualquer mancha foliar. Sem correspondência automática validada no modelo. Podem transmitir TSWV (vira-cabeça), que não integra as classes deste PlantVillage.", "verificar": ["Inspecionar folhas novas com lupa quando houver prateamento e pontos pretos"], "fontes": ["tripes", "plantvillage"]},
+    {"id": "psilideo_citros", "nome": "Psilídeo-dos-citros", "grupo": "inseto", "relacao": "vetor", "culturas": ["Laranja"], "classes_relacionadas": ["Orange___Haunglongbing_(Citrus_greening)"], "sintomas_tipicos": ["Amarelecimento irregular na doença transmitida"], "interpretacao": "Diaphorina citri é vetor da bactéria associada ao HLB. A previsão de greening não demonstra presença do vetor. Aplicável somente a citros.", "verificar": ["Inspecionar brotações de citros", "Solicitar confirmação especializada da doença"], "fontes": ["psilideo"]}
+  ]
+}

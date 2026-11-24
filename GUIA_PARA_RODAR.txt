@@ -1,0 +1,199 @@
+VETRA - GUIA PARA RODAR
+======================
+Atualização: 20/11/2026 - captura da cena vinculada à inferência.
+
+INICIAR NO WINDOWS
+1. Use Python 3.13 (ambiente validado: 3.13.14, CPU).
+2. Na pasta "script shell", execute "Iniciar Inspecao Estufa.cmd".
+3. O painel abre em http://127.0.0.1:8000.
+4. Clique em "Inspecionar agora". O robô visita 12 canteiros e para no STOP.
+5. "Voltar à base" retorna ao START. Ctrl+C encerra o aplicativo.
+Para testar sem CoppeliaSim, use "Demonstracao Web Estufa.cmd":
+painel em http://127.0.0.1:8001, também com inferência REAL.
+Na primeira execução, a instalação das dependências pode demorar.
+
+FLUXO DA INSPEÇÃO
+Foto PlantVillage da cultura -> variações simuladas de captura
+-> folha de referência visível no canteiro do CoppeliaSim
+-> captura RGB da cena -> recorte central -> checagem de qualidade
+-> envio desse recorte por HTTP -> YOLOv5s-cls -> histórico.
+No modo web, a foto preparada é a própria captura enviada ao modelo.
+No CoppeliaSim, a captura original e o recorte enviado ficam preservados.
+As variações de iluminação, sombra, enquadramento, oclusão e desfoque são
+aplicadas à folha de referência antes de aparecer na cena.
+Se três tentativas falharem, a inspeção fica inconclusiva, sem inferência.
+No painel, a foto principal é a imagem efetivamente analisada; o detalhe
+mostra também a captura original e a proveniência da folha de referência.
+O nome da classe, o rótulo do banco e o cenário NÃO são enviados à API.
+A análise não bloqueia os comandos de pausar/retornar. Interrupções
+descartam resultados pendentes e não os associam ao próximo canteiro.
+Falhas de rede/modelo param a missão com erro, sem inventar resultados.
+
+CULTURAS E SORTEIO
+robot/crops.json define a cultura de cada canteiro por seu número.
+Mantida a configuração original: Tomate, Pimentão, Morango e Alface.
+Alface não existe no checkpoint: esses canteiros ficam SEM diagnóstico
+(SUSPECT), sem enviar uma imagem de outra cultura.
+Para mudar um canteiro para Tomate, edite crops.json e reinicie.
+Também há fotos preparadas de Batata e Laranja; não foram acrescentados
+canteiros dessas culturas automaticamente.
+Banco incluído: 54 fotos, 3 por classe, 18 classes, 5 culturas.
+Cada tentativa sorteia uniformemente uma foto da cultura, com reposição
+(pode repetir). A seleção final pode favorecer fotos que passam no filtro
+de qualidade. As variações não representam medições de uma câmera real.
+No CoppeliaSim, a folha de referência é uma superfície plana texturizada
+entre as plantas; é um recurso visual da simulação, não geometria botânica.
+Trata-se de banco de simulação, NÃO de validação independente do treino.
+A distribuição artificial não representa prevalência de doenças em campo.
+
+CONHECIMENTO E LIMITES
+server/knowledge/pragas_sintomas.json:
+- mosca-branca: vetor de TYLCV, não presença confirmada;
+- ácaro-rajado: classe explícita de dano, não contagem de ácaros;
+- pulgões: diferencial visual para enrolamento, não vetor de TYLCV;
+- tripes: referência para investigação manual; nenhuma associação
+  automática a manchas foliares, pois não há correspondência validada;
+- psilídeo: vetor associado ao HLB, somente para citros.
+Os sintomas listados são típicos das referências, não sinais localizados
+pelo modelo. As fontes e ressalvas estão no JSON e no detalhe do painel.
+O sistema não prescreve defensivos nem confirma diagnóstico.
+Softmax não é probabilidade calibrada da doença ou de presença de praga.
+Abaixo de 70% (heurística não validada) ou com cultura divergente, a
+triagem é inconclusiva e não associa automaticamente pragas.
+NORMAL significa aparência saudável na imagem, não ausência de pragas.
+ALERT indica hipótese de alteração, não gravidade confirmada.
+O checkpoint prevê todas as 38 classes. A interpretação em português
+cobre as 18 classes das cinco culturas configuradas nesta integração.
+O modelo não foi retreinado nesta etapa e fotos em campo exigem validação.
+
+ESTRUTURA
+Design do robô atualizado em 05/11/2026: chassi amarelo com duas esteiras,
+longarinas verdes, carcaça branca com tampas pretas e sensores frontais.
+Os segmentos das esteiras acompanham o avanço e o giro do robô. O movimento
+da missão continua cinemático; o modelo não simula tração no solo. A barra
+QTR-8A é visual; a navegação usa os três sensores simulados existentes.
+Durante a simulação, use "Mostrar interior" na janela VETRA do CoppeliaSim
+para ocultar a carcaça e visualizar os componentes internos representados.
+Clique em "Recolocar carcaca" para restaurá-la. As rodas giram acompanhando
+as esteiras, inclusive em curvas. A montagem interna é uma representação visual.
+A câmera gira e inclina até apontar para o canteiro antes da captura.
+Durante o deslocamento, ela volta gradualmente à posição frontal.
+Na janela do CoppeliaSim, durante a simulação, use "Mostrar interior" na
+janela "Interior do VETRA". O botão oculta a carcaça e as tampas para mostrar
+bateria azul, protoboard, controle, driver, conversor e fiação. Clique em
+"Recolocar carcaça" para fechar. Parar a simulação também restaura a carcaça.
+As rodas internas agora giram junto das esteiras, inclusive em ré e curvas.
+O consumo de bateria simulado depende do tempo ligado, deslocamento, giro,
+posicionamento da câmera e espera pela inferência. A reserva para retorno
+usa a distância percorrida na rota até a base e aparece no painel. Os
+coeficientes são ilustrativos; não foram calibrados com medições físicas.
+Geometria: robot/robot_body.py. Animação: robot/track_animation.lua.
+Cena: robot/scenes/AgroBotEstufa.ttt. Prévia: robot/previews/robo-esteiras-perspectiva.png.
+Cena com rodas preservada em robot/scenes/AgroBotEstufa.antes-esteiras.ttt.
+Para regenerar e verificar o modelo, com o CoppeliaSim parado:
+  .\server\.venv\Scripts\python.exe -m robot.tools.verify_robot_body
+
+GUIA_PARA_RODAR.txt          Guia autoritativo na raiz.
+script shell/               Iniciadores .cmd e PowerShell.
+server/
+  src/main.py               Painel, histórico e API local.
+  src/inference_app.py      API de inferência em processo independente.
+  src/classification/
+    router.py               Recebe JPEG/PNG via HTTP, valida limites.
+    model.py                Carrega uma vez os pesos e serializa inferência.
+    yolo.py                 Pré-processamento oficial e compatibilidade.
+    knowledge.py            Regras de interpretação, separadas do modelo.
+    service.py              Simulador antigo, apenas modo legado.
+  src/inspections/          Comandos, agenda, histórico e exportação.
+  knowledge/                JSON de relações e fontes.
+  models/best.pt            Checkpoint validado, sem alteração dos pesos.
+  vendor/yolov5/            Fonte fixada no commit do ambiente validado.
+  templates/dashboard.html Painel com hipóteses, top-5 e evidências.
+  tests/                   Testes da API, regras e modelo via HTTP.
+  requirements/            Dependências da API, modelo e testes.
+  data/, data-demo/         SQLite e fotos de execução; não entram no ZIP.
+  .venv/                   Ambiente local; não entra no ZIP.
+robot/
+  main.py                  Inicializa a missão e o painel.
+  controller.py            Navegação e análise em segundo plano.
+  inference_client.py      Banco por cultura e envio da captura por HTTP.
+  capture_plan.py          Seleção, qualidade e proveniência da referência.
+  prepare_photos.py         Preparação verificável do banco de fotos.
+  simulation_photos/       Fotos originais e manifest.json com hashes.
+  crops.json               Cultura de cada canteiro.
+  greenhouse_scene.py      Cena, folha texturizada e captura RGB.
+  demo_scene.py            Movimento web e captura usada na inferência.
+  scenes/, previews/       Cenas e prévias existentes.
+  tests/, tools/, legacy/  Testes, ferramentas e material histórico.
+
+EXECUÇÃO MANUAL (PowerShell na raiz do projeto)
+  python -m venv server\.venv
+  .\server\.venv\Scripts\python.exe -m pip install -r robot\requirements.txt
+  .\server\.venv\Scripts\python.exe -m robot.main
+
+Demonstração sem CoppeliaSim:
+  .\server\.venv\Scripts\python.exe -m robot.main --demo --web-port 8001 --data-dir server/data-demo
+Regenerar fotos, com internet (confere hashes; não usado em cada captura):
+  .\server\.venv\Scripts\python.exe -m robot.prepare_photos --per-class 3
+Não edite fotos do banco sem atualizar conscientemente sua proveniência.
+O programa recusa imagens alteradas ou ausentes.
+
+SERVIDOR DE MODELO SEPARADO
+No computador servidor, na raiz do projeto:
+  .\server\.venv\Scripts\python.exe -m uvicorn server.src.inference_app:app --host 127.0.0.1 --port 8010
+No robô/painel:
+  .\server\.venv\Scripts\python.exe -m robot.main --inference-url http://127.0.0.1:8010
+Esse modo não carrega o modelo no processo do robô. O painel/telemetria
+ainda compartilha o estado local do robô; a inferência usa HTTP real.
+Para máquinas diferentes, configure o endereço de rede e um acesso
+protegido. NÃO exponha esta API sem autenticação/TLS à internet.
+Não foram implementados autenticação, fila distribuída ou produção pública.
+
+CONTRATO HTTP
+POST /api/classification/predict?crop=Tomate
+Content-Type: image/jpeg (ou image/png)
+Corpo: bytes da imagem, não JSON, não multipart.
+Limites: 5 MiB e 16 megapixels. SVG não é aceito pelo modelo.
+Resposta: predicted_class, top5, confidence, status, inconclusive,
+interpretation (possíveis causas, sintomas típicos, fontes e limites).
+GET /api/classification/health: disponibilidade do modelo local.
+503 se não disponível/ocupado, 413 por tamanho, 415 por tipo,
+422 por imagem inválida ou cultura não suportada.
+O cliente espera até 45 segundos e não usa respostas artificiais como fallback.
+
+HISTÓRICO E COMPATIBILIDADE
+Os dados anteriores e cenários foram preservados. Resultados antigos são
+identificados como artificiais (legado). A escolha manual de cenário
+não pode mudar o resultado do modelo real.
+--legacy-demo mantém exclusivamente o simulador anterior para regressões.
+O modo normal é o modelo real, inclusive com --demo.
+Os CSVs incluem classe, cultura, proveniência e interpretação.
+server/data e server/data-demo continuam separados.
+VETRA_DATA_DIR ou --data-dir alteram o destino em execução manual.
+Os iniciadores resolvem caminhos pela própria localização.
+CoppeliaSim padrão: C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\coppeliaSim.exe
+As cenas existentes foram preservadas; não rode duas missões simultâneas.
+
+TESTES
+  .\server\.venv\Scripts\python.exe -m pip install -r server\requirements\dev.txt
+  .\server\.venv\Scripts\python.exe -m unittest discover -s robot/tests -v
+  .\server\.venv\Scripts\python.exe -m unittest discover -s server/tests -v
+Para incluir o checkpoint real, 54 requisições HTTP e uma missão completa:
+  $env:VETRA_TEST_MODEL = '1'
+  .\server\.venv\Scripts\python.exe -m unittest server.tests.test_model_live -v
+  Remove-Item Env:VETRA_TEST_MODEL
+Verificar iniciador sem abrir navegador/simulador:
+  & ".\script shell\iniciar.ps1" -Demo -CheckOnly -NoBrowser
+
+PROVENIÊNCIA E LICENÇAS
+YOLOv5: 402e17ddf820996f51a191cbb798376e1144f069.
+PlantVillage: 7f7ecc7e1eaca78107e3affe7cb5abd9427e139a.
+Peso SHA256: b310f6be35c8da88db598d5dbee771a9a420a98258b1d87679f7b9f277e14218.
+O carregamento recusa outro hash antes de desserializar o checkpoint.
+A fonte vendorizada preserva a licença upstream; observe suas condições
+antes de redistribuir/comercializar. As fotos mantêm URLs e hashes
+originais no manifest; consulte os termos do dataset antes de redistribuir.
+Referências:
+https://github.com/spMohanty/PlantVillage-Dataset
+https://github.com/ultralytics/yolov5
+https://github.com/zhanymkanov/fastapi-best-practices

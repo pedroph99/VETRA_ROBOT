@@ -1,0 +1,19 @@
+Ferramenta: image_gen integrado.
+
+Use case: infographic-diagram / precise-object-edit. Create ONE landscape PNG updated VETRA views-and-costs presentation. Reference image 1 provides the layout, typography, component inventory and reference prices; reference image 2 is the AUTHORITATIVE CURRENT ROBOT DESIGN. Replace all old four-wheel robots with this CURRENT TWO-TRACK robot: rounded elongated white shell, large black top access panel, small black rear lid, vents, red switch, elevated camera with blue pan/tilt servos, twin front ultrasonic transducers, underside line-sensor bar, yellow perforated deck, black continuous tracks with green inner side plates and yellow end sprockets. No four-wheeled chassis, bare car wheels or automobile fenders anywhere.
+Title exactly "VETRA — VISTAS, COMPONENTES E CUSTOS". Three matched, consistent main views in upper half: true front orthographic "VISTA FRONTAL", true overhead "VISTA AÉREA", front three-quarter isometric "VISTA ISOMÉTRICA". SAME robot and proportions in all views. Use the overhead as opaque shell, not a different generic interior architecture.
+Lower half: one complete, perfectly legible table with EXACTLY these 12 rows. Columns "#", "Componente", "Custo / situação". Transcribe these values accurately:
+01 | ESP32-S3 CAM + OV5640 5 MP | R$ 110,00
+02 | Chassi com esteiras | OK
+03 | Sensor de linha QTR-8A (8 canais) | R$ 29,00
+04 | Driver dos motores | OK
+05 | Sensor ultrassônico HC-SR04 | R$ 12,00
+06 | Conversor DC-DC | OK
+07 | Módulo LED 5050 SMD, 2 LEDs branco frio 6000 K | R$ 5,00
+08 | Mini chave gangorra | R$ 1,00
+09 | Suporte pan-tilt com 2 servos SG90 | R$ 10,00
+10 | Kit de jumpers macho e fêmea | R$ 8,00
+11 | Adaptador P4 macho com borne | R$ 4,00
+12 | Adaptador P4 fêmea com borne | R$ 4,00.
+Rows 02, 04 and 06 MUST display prominent GREEN "OK" badges instead of prices: these items are ALREADY OWNED. Add a neat small legend exactly "OK = já temos". Do NOT show the old wheeled-chassis R$95 cost, the old driver R$40 cost or converter R$13 cost as money still to spend. Other prices remain supplied reference values, not newly researched quotes. The nine priced rows sum EXACTLY R$183,00. Strong bottom box exactly "CUSTO RESTANTE DA LISTA — R$ 183,00". Do NOT show R$331 as remaining cost or complete new robot cost. Short footer exactly "Valores da referência. Carcaça e bateria sem custo informado." Do not invent costs for shell or new battery.
+Design: refined white/off-white studio background, dark emerald header and footer, teal accents, DARK highly legible table text, alternating subtle table rows. Three owned rows can have a pale green highlight. Keep enough space for long component descriptions and clear currency. Optional small item illustrations may occupy lower right if space allows, but table integrity takes priority; any chassis illustration must be tracked. Clean photorealistic 3D product views with soft shadows. No extra tables, no omitted or duplicated rows, no watermark. This is the requested updated views-and-costs image, not an exploded assembly.

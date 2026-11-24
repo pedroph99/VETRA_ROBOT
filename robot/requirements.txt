@@ -1,0 +1,2 @@
+-r ../server/requirements/model.txt
+coppeliasim-zmqremoteapi-client>=2.0.4

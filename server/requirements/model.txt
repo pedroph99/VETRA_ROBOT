@@ -1,0 +1,8 @@
+-r base.txt
+-r ../vendor/yolov5/requirements.txt
+# Ambiente CPU validado em Python 3.13.14 / Windows.
+torch==2.14.0
+torchvision==0.29.0
+numpy==2.5.3
+opencv-python==5.0.0.93
+ultralytics==8.4.163
